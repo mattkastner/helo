@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import routes from './routes'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import PropTypes from "prop-types";
+import { withRouter } from "react-router";
+import 'reset-css'
+import Nav from './components/Nav/Nav'
+import './App.css'
+
+class App extends Component {
+
+  static propTypes = {
+    match: PropTypes.object.isRequired,
+    location: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired
+  };
+
+  render() {
+    return (
+      <div className='app-container'>
+        {this.props.location.pathname === '/' ?
+          null
+          :
+          <Nav />
+        }
+        {routes}
+      </div>
+    )
+  }
 }
 
-export default App;
+export default withRouter(App)

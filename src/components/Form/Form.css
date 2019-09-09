@@ -1,0 +1,75 @@
+.form-background {
+    background: #F2F2F2;
+    width: 90%;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-container{
+    width: 80%;
+    height: 80%;
+    background: white;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.new-post {
+    font-size: 38px;
+    color: #FF9670;
+    font-weight: bold;
+    height: 20%;
+    width: 100%;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.form{
+    font-weight: bold;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.form-input {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-input > input {
+    width: 100%;
+}
+
+.form-input > textarea {
+    width: 100%;
+}
+
+.submit-btn{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15%;
+}
+
+.submit-btn > button {
+    width: 90px;
+    height: 35px;
+    border: 2px solid #494744;
+    color:#494744;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
